@@ -7,10 +7,9 @@
         >
     </div>
     <div class="">
-        <h5 class="font-bold mb-4">Duisen Balgynbek</h5>
+        <h5 class="font-bold mb-4">{{ $tweet->user->name }}</h5>
         <p class="text-sm">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae omnis beatae minus modi culpa! Corrupti accusantium nesciunt, temporibus velit ea molestiae facilis? Quaerat harum quibusdam animi sunt exercitationem eum expedita.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae reiciendis maiores fugiat earum a ducimus dolores expedita nam sunt.
+            {{ $tweet->body }}
         </p>
     </div>
 </div>
