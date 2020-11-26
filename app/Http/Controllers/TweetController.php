@@ -35,7 +35,14 @@ class TweetController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $val = request()->validate(['body' => 'required|max:100']);
+
+        Tweet::create([
+            'user_id' => auth()->id(),
+            'body' => $val['body']
+        ]);
+
+        return redirect(route('home'));
     }
 
     /**
